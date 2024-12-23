@@ -21,6 +21,8 @@
 		"^@/components/(.*)$",
 		"^@/components",
 		"^@/constants/(.*)$",
+		"^@/lib/(.*)$",
+		"^@/lib",
 		"^@/utils/(.*)$",
 		"^@/utils",
 		"^@/api/(.*)$",

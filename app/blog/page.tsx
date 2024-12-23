@@ -3,14 +3,12 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui'
 
-const Home: NextPage = () => {
+const Blog: NextPage = () => {
 	return (
-		<>
-			<Link href='/blog'>
-				<Button>Blog</Button>
-			</Link>
-		</>
+		<Link href='/'>
+			<Button>Home</Button>
+		</Link>
 	)
 }
 
-export default Home
+export default Blog
