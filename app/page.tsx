@@ -9,6 +9,9 @@ const Home: NextPage = () => {
 			<Link href='/blog'>
 				<Button>Blog</Button>
 			</Link>
+			<Link href='/welcome'>
+				<Button>Welcome</Button>
+			</Link>
 		</>
 	)
 }

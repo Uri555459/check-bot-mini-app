@@ -4,8 +4,28 @@ import { cn } from '@/lib/utils'
 
 interface Props {
 	className?: string
+	tag: TypographyTag
+	color?: 'white' | 'black'
 }
 
-export const Typography: FC<Props> = ({ className }) => {
-	return <div className={cn(className)}></div>
+type TypographyTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+
+export const Typography: FC<Props> = ({
+	className,
+	tag = 'h1',
+	color = 'white'
+}) => {
+	const Tag = tag
+
+	return (
+		<Tag
+			className={cn(
+				{
+					['text-white']: color === 'white',
+					['text-black']: color === 'black'
+				},
+				className
+			)}
+		></Tag>
+	)
 }

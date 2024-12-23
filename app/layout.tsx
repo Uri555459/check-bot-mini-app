@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 
+import { cn } from '@/lib/utils'
+
 import './globals.css'
 
 const geistSans = Geist({
@@ -26,7 +28,10 @@ export default function RootLayout({
 	return (
 		<html lang='ru'>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={cn(
+					`${geistSans.variable} ${geistMono.variable} antialiased`,
+					'min-h-full min-w-80 overflow-x-hidden bg-[#0e2531]'
+				)}
 			>
 				<div>
 					<main>{children}</main>
