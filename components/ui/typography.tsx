@@ -4,11 +4,13 @@ import { cn } from '@/lib/utils'
 
 interface Props {
 	className?: string
-	tag: TypographyTag
-	color?: 'white' | 'black'
+	tag: TypographyTagType
+	color?: ColorType
 }
 
-type TypographyTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+type ColorType = 'white' | 'black'
+
+type TypographyTagType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
 export const Typography: FC<Props> = ({
 	className,
